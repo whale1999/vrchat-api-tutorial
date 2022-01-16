@@ -78,7 +78,7 @@ def main():
 
             # Send a notification via slack when a monitored friend logs out.
         if name in regsitered_online_friends and name not in now_online_friends_name:
-            print(name + ' has logged out at ' + present_time)
+            send_slack_message(name + ' has logged out at ' + present_time)
 
     # update Database now online friends list
     update_online_friends_status(now_online_friends)
