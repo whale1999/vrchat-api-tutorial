@@ -1,4 +1,5 @@
 import os
+from unicodedata import name
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -13,3 +14,8 @@ API_KYE = 'JlE5Jldo5Jibnk5O5hTx6XVqsJu4WJ26'
 SLACK_WEB_HOOK_URL = os.environ['SLACK_WEB_HOOK_URL']
 # postgres
 DATABASE_URL = os.environ['DATABASE_URL']
+
+# database table name
+LOGGINED_FRIENDS = 'loggined_friends'
+MONITORING_FRIENDS = 'monitoring_friends'
+
