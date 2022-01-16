@@ -6,10 +6,10 @@
 
 ## Specifications
  
-**On Heroku, after running app.py periodically, use slack to receive notifications. Postgres is used to record the login information.**
+**On Heroku, after running app.py periodically, use slack to receive notifications. Postgres is used to record the friends login status and names of friends you want to monitor.**
 ***
 ## Usage
-**First**, you need to set "USER_NAME"(VRChathat), "LOGIN_PASS"(VRChat), "SLACK_WEB_HOOK_URL"(Slack), and "DATABASE_URL(Postgres)" as environment variables.
+**First**, you need to set "USER_NAME"(VRChathat), "LOGIN_PASS"(VRChat), "SLACK_WEB_HOOK_URL"(Slack), and "DATABASE_URL(Postgres)" as environment variables on heroku console.
 
 **Next**, create a table to record the names of friends who are logged in at the moment and a table to record the names of friends you want to monitor. I use the table names "logged_friends" and "monitoring_friends". This can be any name you want, but you will need to modify some of the code in app.py.
 
